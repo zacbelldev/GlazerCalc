@@ -5,10 +5,21 @@
     xmlns:local="using:GlazerCalc"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:WinUX.Xaml.Controls.Validation"
+    xmlns:rules="using:WinUX.Validation.Rules"
+    xmlns:validation="using:WinUX.Validation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.Resources>
+            <!--<validation:ValidationRules x:Key="IsDouble">
+                <validation:ValidationRules.Rules>
+                    <rules:DoubleValidationRule
+                    />
+                </validation:ValidationRules.Rules>
+            </validation:ValidationRules>-->
+        </Grid.Resources>
         <Button x:Name="calcButton" Content="Calculate" HorizontalAlignment="Left" Margin="94,431,0,0" VerticalAlignment="Top" Height="53" Width="297" FontSize="24" Click="calcButton_Click"/>
         <TextBox x:Name="heightTextBox" HorizontalAlignment="Left" Margin="191,136,0,0" Text="" VerticalAlignment="Top" Width="200" TextChanged="heightTextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="94,148,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top"/>
