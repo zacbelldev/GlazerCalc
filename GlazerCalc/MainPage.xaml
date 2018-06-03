@@ -9,7 +9,34 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Hello World" HorizontalAlignment="Left" Margin="551,112,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="94,431,0,0" VerticalAlignment="Top" Click="Button_Click" Height="53" Width="239" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" Margin="191,136,0,0" Text="" VerticalAlignment="Top" Width="141" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,148,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="191,198,0,0" Text="" VerticalAlignment="Top" Width="141"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,210,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,273,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,329,0,0" Text="Color" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Slider HorizontalAlignment="Left" Margin="191,261,0,0" VerticalAlignment="Top" Width="141"/>
+        <ComboBox HorizontalAlignment="Left" Margin="191,323,0,0" VerticalAlignment="Top" Width="141">
+            <ComboBoxItem Content="Black"/>
+            <ComboBoxItem Content="Brown"/>
+            <ComboBoxItem Content="Blue"/>
+        </ComboBox>
+        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="349" Margin="445,136,0,0" VerticalAlignment="Top" Width="482" BorderThickness="2,2,2,2">
+            <Border.FocusVisualPrimaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.FocusVisualPrimaryBrush>
+            <TextBlock HorizontalAlignment="Center" Text="GLAZER CALCULATION" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="195" Margin="-375,-97,0,0" FontSize="24" HorizontalTextAlignment="Center"/>
+        </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="507,246,0,0" Text="DATE" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="507,363,0,0" Text="LENGTH OF WOOD FRAME" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="507,302,0,0" Text="AREA OF GLASS" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,250,145,0" Text="_____" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,363,145,0" Text="_____" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,306,145,0" Text="_____" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
